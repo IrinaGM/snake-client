@@ -14,6 +14,21 @@ const connect = () => {
   conn.on("connect", (connection) => {
     console.log("Successfully connected to game server");
     conn.write("Name: IG");
+    // setInterval(() => {
+    //   conn.write("Move: up");
+    // }, 50);
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    // }, 50);
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    // }, 50);
+    // setTimeout(() => {
+    //   conn.write("Move: left");
+    // }, 50);
+    // setTimeout(() => {
+    //   conn.write("Move: right");
+    // }, 50);
   });
 
   // event handler for data recieved from the server
