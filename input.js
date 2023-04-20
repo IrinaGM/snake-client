@@ -1,6 +1,16 @@
+let connection;
+
+const movement = {
+  w: "Move: up",
+  a: "Move: left",
+  s: "Move: down",
+  d: "Move: right",
+};
+
 // setup interface to handle user input from stdin
-const setupInput = () => {
+const setupInput = (conn) => {
   const stdin = process.stdin;
+  connection = conn;
   stdin.setRawMode(true);
   stdin.setEncoding("utf8");
   stdin.resume();
@@ -16,7 +26,7 @@ const handleUserInput = function (key) {
   if (key === "\u0003") {
     process.exit();
   }
-  console.log(key);
+  connection.write(movement[key]);
 };
 
 module.exports = { setupInput };

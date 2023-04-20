@@ -1,7 +1,6 @@
 const { connect } = require("./client");
 const { setupInput } = require("./input");
 
-console.log("Connecting to server...");
-connect();
+const conn = connect();
 
-setupInput();
+setupInput(conn);
