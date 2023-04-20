@@ -29,7 +29,11 @@ const handleUserInput = function (key) {
   if (key === "\u0003") {
     process.exit();
   }
-  connection.write(movement[key]);
+
+  // only if key is a valid movement send it to server
+  if (movement[key]) {
+    connection.write(movement[key]);
+  }
 };
 
 module.exports = { setupInput };
