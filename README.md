@@ -6,7 +6,7 @@ This is simply a multiplayer take on the genre.
 
 Before you can run this client project, you will need to be running the server side which you can download and install from [here](https://github.com/lighthouse-labs/snek-multiplayer.git).
 
-## Final Product
+## Project Demo
 
 !["Demo"](https://github.com/IrinaGM/snake-client/blob/master/Snake-Client-Project.gif)
 
@@ -14,3 +14,14 @@ Before you can run this client project, you will need to be running the server s
 
 - Follow steps inside the snek server repo to run the server side.
 - Run the development snake client using the `node play.js` command.
+
+## Play!
+
+The following keys are allowed in the game:
+`w`: Moves: up
+`a`: Moves: left
+`s`: Moves: down
+`d`: Moves: right
+`l`: Says: lol
+`o`: Says: oh no!
+`h`: Says: hi!
