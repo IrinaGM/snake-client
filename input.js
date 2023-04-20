@@ -5,6 +5,9 @@ const movement = {
   a: "Move: left",
   s: "Move: down",
   d: "Move: right",
+  l: "Say: lol",
+  o: "Say: oh no!",
+  h: "Say: hi!",
 };
 
 // setup interface to handle user input from stdin
